@@ -5,7 +5,7 @@ import IssuesManagement from "./components/IssuesManagement";
 import { Suspense } from "react";
 
 const fetchIssues = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("/data.json");
   return res.json();
 };
 
